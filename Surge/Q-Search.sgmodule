@@ -2,8 +2,6 @@
 #!desc=Browser Search Add-ons
 #!system=ios
 
-# Q-Search 
-# From Neurogram (https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/Q-Search.sgmodule)
 
 # - Safari 内输入 命令 + 空格 + 关键词 快速指定搜索引擎搜索
 
@@ -50,9 +48,7 @@
 
 [URL Rewrite]
 
-
 # ＞搜索
-
 #gm   (Google图片)
 ^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ https://www.google.com/search?&tbm=isch&q=$1 302
 
@@ -70,7 +66,6 @@
 
 # tf  (Google 搜索 TestFlight)
 ^https:\/\/duckduckgo.com\/\?q=tf(\+|%20)([^&]+).+ https://www.google.com/search?as_q=$2&as_sitesearch=testflight.apple.com 302
-
 
 # > 翻译
 
@@ -101,15 +96,11 @@
 # rd  (Reddit)
 ^https:\/\/duckduckgo.com\/\?q=rd\+([^&]+).+ https://www.reddit.com/search?q=$1 302
 
-# tw (Twitter)
-^https:\/\/duckduckgo.com\/\?q=tw\+([^&]+).+ https://twitter.com/search?q=$1 302
-
 # ssp: 少数派
 ^https:\/\/duckduckgo.com\/\?q=ssp\+([^&]+).+ https://sspai.com/search/post/$1 302
 
 # csdn: CSDN
 ^https:\/\/duckduckgo.com\/\?q=csdn\+([^&]+).+ https://so.csdn.net/so/search/s.do?q=$1&t=&u= 302
-
 
 # > 购物
 
@@ -151,3 +142,13 @@
 
 # bd: 百度
 ^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
+
+# ddg: DuckDuckGo 
+^https:\/\/duckduckgo.com\/\?q=ddg\+([^&]+).+ https://duckduckgo.com/?ia=about&q=$1 302
+
+# 无指令: 谷歌
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
+
+
+[MITM]
+hostname = %APPEND% duckduckgo.com
