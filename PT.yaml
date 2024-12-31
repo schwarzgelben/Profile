@@ -3,12 +3,12 @@ payload:
   - DOMAIN-SUFFIX, tracker.hhan.club
   - DOMAIN-SUFFIX, hhanclub.top
   - DOMAIN-SUFFIX, pandapt.net
-  - DOMAIN-SUFFIX, t.audiences.me
-  - DOMAIN-SUFFIX, tracker.cinefiles.info  
+  - DOMAIN-SUFFIX, audiences.me
+  - DOMAIN-SUFFIX, cinefiles.info  
   - DOMAIN-SUFFIX, chdbits.xyz  
   - DOMAIN-SUFFIX, piggo.me
   - DOMAIN-SUFFIX, ptchdbits.co
-  - DOMAIN-SUFFIX, t.hddolby.com
+  - DOMAIN-SUFFIX, hddolby.com
   - DOMAIN-SUFFIX, ubits.club
   - DOMAIN-SUFFIX, abtorrents.me
   - DOMAIN-SUFFIX, avgv.cc
@@ -31,7 +31,7 @@ payload:
   - DOMAIN-SUFFIX, hddolby.com
   - DOMAIN-SUFFIX, hdhome.org
   - DOMAIN-SUFFIX, hdroute.org
-  - DOMAIN, hdsky.me
+  - DOMAIN-SUFFIX, hdsky.me
   - DOMAIN-SUFFIX, jpopsuki.eu
   - DOMAIN-SUFFIX, keepfrds.com
   - DOMAIN-SUFFIX, leaguehd.com
